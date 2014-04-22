@@ -9,7 +9,7 @@ class News extends CI_Controller {
 
 	public function view(/*$slug*/)
 	{
-		$data['news'] = $this->news_model->get_news($slug);
+		$data['news_item'] = $this->news_model->get_news($slug);
 		if (empty($data['news_item']))
 		{
 			show_404();

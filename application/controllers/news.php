@@ -7,7 +7,7 @@ class News extends CI_Controller {
 		$this->load->model('news_model');
 	}
 
-	public function view($slug)
+	public function view(/*$slug*/)
 	{
 		$data['news'] = $this->news_model->get_news($slug);
 		if (empty($data['news_item']))
@@ -16,7 +16,7 @@ class News extends CI_Controller {
 		}
 
 		$data['title'] = $data['news_item']['title'];
-
+		$data['title'] = $data['news']['title'];
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/view', $data);
 		$this->load->view('templates/footer');

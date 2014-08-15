@@ -10,11 +10,11 @@
 <!--	<link rel="stylesheet" href="<?=base_url("/public/css/bootstrap-responsive.min.css")?>"> -->
 </head>
 <body>
-
+<div class="container">
 <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-default navbar-static-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,9 +30,15 @@
 		<li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">財產<span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
-		    <li><a href="#">財產列表1</a></li>
-		    <li><a href="#">財產列表2</a></li>
-		    <li><a href="#">財產列表3</a></li>
+		    <li><a href="#">財產列表</a></li>
+                    <li class="divider"></li>
+		    <li><a href="#">財產匯入/匯出</a></li>
+                    <li class="divider"></li>
+		    <li><a href="#">年度可報廢財產</a></li>
+                    <li class="divider"></li>
+		    <li><a href="#">手動調整財產</a></li>
+                    <li class="divider"></li>
+		    <li><a href="#">畢業專區</a></li>
 		  </ul>
 		</li>
 		<li class="dropdown">
@@ -42,8 +48,14 @@
                     <li class="divider"></li>
 		    <li><a href="#">個人使用財產清單</a></li>
 		  </ul>
-		</li>
-              </ul>
+		</li> <!-- done dropdown list-->
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+        	  <li><a href="#">註冊</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+        	  <li><a href="#">登入</a></li>
+		</ul>
             </div>
           </div>
         </div>
